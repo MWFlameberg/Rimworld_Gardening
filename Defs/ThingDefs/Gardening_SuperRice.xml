@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="SuperRice" ParentName="PlantBase">
+		<defName>Gardening_Plant_SuperRice</defName>
+		<label>super rice plant</label>
+		<description>A short, fast-growing crop that yields small edible grains. Its great nutritional output and ease of cultivation has made it the economic core of many great civilizations. While rice grows quickly, it is sensitive to soil fertility and will not fare well in poor soil.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.175</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RicePlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible />
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawSuperRice</harvestedThingDef>
+			<harvestYield>50</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>0.1</growDays>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>RawSuperRice</defName>
+		<label>superrice</label>
+		<description>Raw Super rice.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>
+		<graphicData>
+			<texPath>Things/Item/Resource/PlantFoodRaw/Rice</texPath>
+		</graphicData>
+		<statBases>
+			<Nutrition>5</Nutrition>
+			<MarketValue>1.1</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>Seed</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>40</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

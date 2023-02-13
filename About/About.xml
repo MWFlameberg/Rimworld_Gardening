@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+	<name>Gardening</name>
+	<author>Flameberg</author>
+	<packageId>Flameberg.Gardening</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<description>V1.0\n\nAdds in Super Rice that grows near instant and yields high-quantity, high-nutrition super rice.</description>
+</ModMetaData>
