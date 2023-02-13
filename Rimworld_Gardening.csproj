@@ -48,8 +48,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Projectile_PlagueBullet.cs" />
-    <Compile Include="ThingDef_PlagueBullet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
