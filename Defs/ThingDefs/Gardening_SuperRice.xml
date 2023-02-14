@@ -4,6 +4,7 @@
 		<defName>Gardening_Plant_SuperRice</defName>
 		<label>super rice plant</label>
 		<description>A short, fast-growing crop that yields small edible grains. Its great nutritional output and ease of cultivation has made it the economic core of many great civilizations. While rice grows quickly, it is sensitive to soil fertility and will not fare well in poor soil.</description>
+		<thingClass>Rimworld_Gardening.Gardening_SuperRice</thingClass>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Nutrition>0.175</Nutrition>
@@ -24,6 +25,7 @@
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
+				<li>Trellis</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>0.1</growDays>
@@ -32,6 +34,11 @@
 			<purpose>Food</purpose>
 			<humanFoodPlant>true</humanFoodPlant>
 		</plant>
+		<modExtensions>
+			<li Class="Rimworld_Gardening.Gardening_PlantExtension">
+				<trellisHarvestAfterGrowth>0.5</trellisHarvestAfterGrowth>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>RawSuperRice</defName>

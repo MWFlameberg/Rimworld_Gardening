@@ -2,9 +2,9 @@
 <ModMetaData>
 	<name>Gardening</name>
 	<author>Flameberg</author>
-	<packageId>Flameberg.Gardening</packageId>
+	<packageId>Flameberg.RimworldGardening.Gardening</packageId>
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
-	<description>V1.0\n\nAdds in Super Rice that grows near instant and yields high-quantity, high-nutrition super rice.</description>
+	<description>V1.0.\nInclusion of 'Trellis' growing structure. Allowing repeated harvesting of certain crops.</description>
 </ModMetaData>
