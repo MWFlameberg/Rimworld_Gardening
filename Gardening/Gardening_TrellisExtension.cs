@@ -2,7 +2,7 @@
 using Verse;
 
 namespace Rimworld_Gardening {
-    internal class Gardening_PlantExtension : DefModExtension {
+    public class Gardening_TrellisExtension : DefModExtension {
         public float trellisHarvestAfterGrowth;
     }
 }

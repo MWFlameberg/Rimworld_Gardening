@@ -48,15 +48,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Gardening\Gardening_PlantExtension.cs" />
-    <Compile Include="Gardening\Gardening_SuperRice.cs" />
+    <Compile Include="Gardening\Gardening_Planter.cs" />
+    <Compile Include="Gardening\Gardening_SoilComp.cs" />
+    <Compile Include="Gardening\Gardening_TrellisExtension.cs" />
+    <Compile Include="Gardening\Gardening_TrellisPlant.cs" />
     <Compile Include="Gardening\Gardening_Trellis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About\About.xml" />
+    <Content Include="Defs\ThingDefs\Gardening_Grape.xml" />
+    <Content Include="Defs\ThingDefs\Gardening_GreenBean.xml" />
+    <Content Include="Defs\ThingDefs\Gardening_Planter.xml" />
+    <Content Include="Patches\Gardening_TrellisPlant.xml" />
     <Content Include="Defs\ThingDefs\Gardening_SuperRice.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Trellis.xml" />
+    <Content Include="Textures\Things\Building\Production\Gardening_Planter.PNG" />
     <Content Include="Textures\Things\Building\Production\Gardening_Trellis.png" />
   </ItemGroup>
   <ItemGroup />

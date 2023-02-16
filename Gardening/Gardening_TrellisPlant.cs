@@ -2,10 +2,10 @@
 using Verse;
 
 namespace Rimworld_Gardening {
-    internal class Gardening_SuperRice : Plant {
+    public class Gardening_TrellisPlant : Plant {
         public override void PlantCollected(Pawn by, PlantDestructionMode plantDestructionMode) {
             if (base.Position.GetFirstBuilding(base.Map).Label == "trellis") {
-                growthInt = def.GetModExtension<Gardening_PlantExtension>().trellisHarvestAfterGrowth;
+                growthInt = def.GetModExtension<Gardening_TrellisExtension>().trellisHarvestAfterGrowth;
                 base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things);
             }
             else {

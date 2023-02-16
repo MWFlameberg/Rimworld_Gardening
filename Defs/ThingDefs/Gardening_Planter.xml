@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="BuildingBase">
-		<defName>Gardening_Trellis</defName>
-		<label>trellis</label>
+		<defName>Gardening_Planter</defName>
+		<label>planter</label>
 		<description>TBD</description>
-		<thingClass>Rimworld_Gardening.Gardening_Trellis</thingClass>
+		<thingClass>Rimworld_Gardening.Gardening_Planter</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Production/Gardening_Trellis</texPath>
+			<texPath>Things/Building/Production/Gardening_Planter</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
@@ -30,7 +30,7 @@
 		</costList>
 		<building>
 			<defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
-			<sowTag>Trellis</sowTag>
+			<sowTag>Ground</sowTag>
 			<buildingTags>
 				<li>Production</li>
 			</buildingTags>
@@ -38,9 +38,11 @@
 		<tickerType>Rare</tickerType>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
+			<li Class="Rimworld_Gardening.Gardening_SoilCompProperties">
+				<mySoilFertility>1</mySoilFertility>
+			</li>
 		</comps>
 		<researchPrerequisites></researchPrerequisites>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>Production</designationCategory>
 	</ThingDef>
 </Defs>

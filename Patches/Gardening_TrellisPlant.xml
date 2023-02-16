@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Hops"]/plant/sowTags</xpath>
+				<value>
+					<li>Trellis</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Hops"]</xpath>
+				<value>
+					<thingClass>Rimworld_Gardening.Gardening_TrellisPlant</thingClass>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName="Plant_Hops"]</xpath>
+				<value>
+					<li Class="Rimworld_Gardening.Gardening_TrellisExtension">
+						<trellisHarvestAfterGrowth>0.5</trellisHarvestAfterGrowth>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>"
+</Patch>

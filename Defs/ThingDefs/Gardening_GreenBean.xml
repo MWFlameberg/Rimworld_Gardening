@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="SuperRice" ParentName="PlantBase">
-		<defName>Gardening_Plant_SuperRice</defName>
-		<label>super rice plant</label>
+	<ThingDef Name="GreenBean" ParentName="PlantBase">
+		<defName>Gardening_Plant_GreenBean</defName>
+		<label>green bean</label>
 		<description>TBD</description>
 		<thingClass>Rimworld_Gardening.Gardening_TrellisPlant</thingClass>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
-			<Nutrition>0.175</Nutrition>
+			<Nutrition>0.25</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/RicePlant</texPath>
@@ -20,15 +20,15 @@
 			<dieIfLeafless>true</dieIfLeafless>
 			<maxMeshCount>4</maxMeshCount>
 			<harvestTag>Standard</harvestTag>
-			<harvestedThingDef>RawSuperRice</harvestedThingDef>
-			<harvestYield>50</harvestYield>
+			<harvestedThingDef>RawGreenBean</harvestedThingDef>
+			<harvestYield>12</harvestYield>
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
 				<li>Trellis</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>0.1</growDays>
+			<growDays>10</growDays>
 			<visualSizeRange>0.3~0.8</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
@@ -36,14 +36,14 @@
 		</plant>
 		<modExtensions>
 			<li Class="Rimworld_Gardening.Gardening_TrellisExtension">
-				<trellisHarvestAfterGrowth>0.5</trellisHarvestAfterGrowth>
+				<trellisHarvestAfterGrowth>0.55</trellisHarvestAfterGrowth>
 			</li>
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="PlantFoodRawBase">
-		<defName>RawSuperRice</defName>
-		<label>superrice</label>
-		<description>Raw Super rice.</description>
+		<defName>RawGreenBean</defName>
+		<label>greenbean</label>
+		<description>Raw Green Bean</description>
 		<soundInteract>Grain_Drop</soundInteract>
 		<soundDrop>Grain_Drop</soundDrop>
 		<graphicData>
@@ -58,7 +58,7 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>40</daysToRotStart>
+				<daysToRotStart>20</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
