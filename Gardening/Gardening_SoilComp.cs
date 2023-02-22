@@ -9,11 +9,14 @@ using Verse.Sound;
 namespace Rimworld_Gardening {
     public class Gardening_SoilComp : ThingComp {
         public Gardening_SoilCompProperties Props => (Gardening_SoilCompProperties)this.Props;
-        public float soilFertility => Props.mySoilFertility;
+        public float soilFertility;
         private static TargetingParameters TargetingParams => new TargetingParameters {
             canTargetPawns = false,
             canTargetLocations = true
         };
+        public override void Initialize(CompProperties props) {
+            base.Initialize(props);
+        }
         public override void CompTick() {
             base.CompTick();
         }
@@ -22,9 +25,8 @@ namespace Rimworld_Gardening {
                 yield return item;
             }
             Command_Action command_Action = new Command_Action();
-            command_Action.defaultLabel = "70%";
-            command_Action.defaultDesc = "70&";
-            command_Action.icon = ContentFinder<Texture2D>.Get("UI/Commands/TempLower");
+            command_Action.defaultLabel = string.Format("{0}: {1}", "Gardening_SoilFertility".Translate(), soilFertility.ToStringPercent());
+            command_Action.defaultDesc = string.Format("{0}: {1}", "Gardening_SoilFertility".Translate(), soilFertility.ToStringPercent());
             command_Action.action = delegate {
                 Find.WindowStack.Add(new FloatMenu(GetFloatMenuOptions()));
             };
@@ -33,18 +35,15 @@ namespace Rimworld_Gardening {
         }
         private List<FloatMenuOption> GetFloatMenuOptions() {
             List<FloatMenuOption> floatMenuOptions = new List<FloatMenuOption>();
-            Action action70 = delegate {
-                Props.mySoilFertility = 0.7f;
-            };
-            Action action100 = delegate {
-                Props.mySoilFertility = 1.0f;
-            };
-            Action action140 = delegate {
-                Props.mySoilFertility = 1.4f;
-            };
-            floatMenuOptions.Add(new FloatMenuOption("70", null));
-            floatMenuOptions.Add(new FloatMenuOption("100", null));
-            floatMenuOptions.Add(new FloatMenuOption("140", null));
+            floatMenuOptions.Add(new FloatMenuOption("70", delegate {
+                soilFertility = 0.7f;
+            }));
+            floatMenuOptions.Add(new FloatMenuOption("100", delegate {
+                soilFertility = 1.0f;
+            }));
+            floatMenuOptions.Add(new FloatMenuOption("140", delegate {
+                soilFertility = 1.4f;
+            }));
             return floatMenuOptions;
         }
     }
@@ -57,5 +56,4 @@ namespace Rimworld_Gardening {
             this.compClass = compClass;
         }
     }
-
 }

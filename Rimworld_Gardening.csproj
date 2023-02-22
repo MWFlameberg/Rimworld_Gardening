@@ -49,7 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gardening\Gardening_Planter.cs" />
+    <Compile Include="Gardening\Gardening_Soil.cs" />
     <Compile Include="Gardening\Gardening_SoilComp.cs" />
+    <Compile Include="Gardening\Gardening_SoilJob.cs" />
+    <Compile Include="Gardening\Gardening_SoilJobDriver.cs" />
     <Compile Include="Gardening\Gardening_TrellisExtension.cs" />
     <Compile Include="Gardening\Gardening_TrellisPlant.cs" />
     <Compile Include="Gardening\Gardening_Trellis.cs" />
@@ -57,9 +60,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About\About.xml" />
+    <Content Include="Defs\JobDefs\Gardening_SoilJob.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Grape.xml" />
     <Content Include="Defs\ThingDefs\Gardening_GreenBean.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Planter.xml" />
+    <Content Include="Defs\ThingDefs\Gardening_Soil.xml" />
+    <Content Include="Defs\ThinkDefs\Gardening_SoilJob.xml" />
+    <Content Include="Languages\English\Keyed\Gardening_Keys.xml" />
     <Content Include="Patches\Gardening_TrellisPlant.xml" />
     <Content Include="Defs\ThingDefs\Gardening_SuperRice.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Trellis.xml" />

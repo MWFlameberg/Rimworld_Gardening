@@ -10,6 +10,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
+		<fertility>1</fertility>
 		<castEdgeShadows>false</castEdgeShadows>
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<rotatable>false</rotatable>
@@ -39,7 +40,7 @@
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="Rimworld_Gardening.Gardening_SoilCompProperties">
-				<mySoilFertility>1</mySoilFertility>
+				<mySoilFertility>0.5</mySoilFertility>
 			</li>
 		</comps>
 		<researchPrerequisites></researchPrerequisites>

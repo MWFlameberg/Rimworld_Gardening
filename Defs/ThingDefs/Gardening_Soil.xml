@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase" Name="Gardening_RichSoil">
+		<description>TBD</description>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-8</Beauty>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Chunk/ChunkStone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<flipExtraRotation>80</flipExtraRotation>
+		</graphicData>
+		<thingCategories>
+			<li>Soil</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase" Name="Gardening_Soil">
+		<description>TBD</description>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-8</Beauty>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Chunk/ChunkStone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<flipExtraRotation>80</flipExtraRotation>
+		</graphicData>
+		<thingCategories>
+			<li>Soil</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase" Name="Gardening_StonySoil">
+		<description>TBD</description>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-8</Beauty>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Chunk/ChunkStone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<flipExtraRotation>80</flipExtraRotation>
+		</graphicData>
+		<thingCategories>
+			<li>Soil</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>

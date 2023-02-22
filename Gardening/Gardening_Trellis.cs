@@ -28,7 +28,7 @@ namespace Rimworld_Gardening {
             else {
                 stringBuilder.AppendLine("CannotGrowBadSeasonTemperature".Translate());
             }
-            stringBuilder.Append(string.Format("{0}: {1}","Fertility_Label".Translate(), base.Map.fertilityGrid.FertilityAt(base.Position).ToStringPercent()));
+            stringBuilder.Append(string.Format("{0}: {1}", "Gardening_SoilFertility".Translate(), base.Map.fertilityGrid.FertilityAt(base.Position).ToStringPercent()));
             return stringBuilder.ToString();
         }
         public void ContentsStatistics(out int totalPlants, out float averagePlantAgeTicks, out int oldestPlantAgeTicks, out float averagePlantGrowth, out float maxPlantGrowth) {

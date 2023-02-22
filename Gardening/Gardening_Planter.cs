@@ -7,6 +7,10 @@ using Verse;
 namespace Rimworld_Gardening {
     public class Gardening_Planter : Building_PlantGrower {
         private ThingDef plantDefToGrow;
+        public override void PostMake() {
+            base.PostMake();
+
+        }
         public override string GetInspectString() {
             StringBuilder stringBuilder = new StringBuilder();
 
@@ -28,7 +32,7 @@ namespace Rimworld_Gardening {
             else {
                 stringBuilder.AppendLine("CannotGrowBadSeasonTemperature".Translate());
             }
-            stringBuilder.Append(string.Format("{0}: {1}", "Fertility_Label".Translate(), base.Map.fertilityGrid.FertilityAt(base.Position).ToStringPercent()));
+            stringBuilder.Append(string.Format("{0}: {1}", "Gardening_SoilFertility".Translate(), base.Map.fertilityGrid.FertilityAt(base.Position).ToStringPercent()));
             return stringBuilder.ToString();
         }
         public void ContentsStatistics(out int totalPlants, out float averagePlantAgeTicks, out int oldestPlantAgeTicks, out float averagePlantGrowth, out float maxPlantGrowth) {
