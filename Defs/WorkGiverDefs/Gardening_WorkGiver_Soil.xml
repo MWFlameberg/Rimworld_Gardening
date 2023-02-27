@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WorkGiverDef>
+		<defName>Gardening_DigSoil</defName>
+		<label>dig up the soil</label>
+		<giverClass>Rimworld_Gardening.Gardening_WorkGiver_Soil</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>75</priorityInType>
+		<verb>dig</verb>
+		<gerund>mining</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<canBeDoneByMechs>false</canBeDoneByMechs>
+	</WorkGiverDef>
+</Defs>

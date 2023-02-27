@@ -7,8 +7,8 @@ using Verse;
 using Verse.Sound;
 
 namespace Rimworld_Gardening {
-    public class Gardening_SoilComp : ThingComp {
-        public Gardening_SoilCompProperties Props => (Gardening_SoilCompProperties)this.Props;
+    public class Gardening_Planter_SoilComp : ThingComp {
+        public Gardening_Planter_SoilCompProperties Props => (Gardening_Planter_SoilCompProperties)this.Props;
         public float soilFertility;
         private static TargetingParameters TargetingParams => new TargetingParameters {
             canTargetPawns = false,
@@ -47,12 +47,12 @@ namespace Rimworld_Gardening {
             return floatMenuOptions;
         }
     }
-    public class Gardening_SoilCompProperties : CompProperties {
+    public class Gardening_Planter_SoilCompProperties : CompProperties {
         public float mySoilFertility;
-        public Gardening_SoilCompProperties() {
-            this.compClass = typeof(Gardening_SoilComp);
+        public Gardening_Planter_SoilCompProperties() {
+            this.compClass = typeof(Gardening_Planter_SoilComp);
         }
-        public Gardening_SoilCompProperties(Type compClass) : base(compClass) {
+        public Gardening_Planter_SoilCompProperties(Type compClass) : base(compClass) {
             this.compClass = compClass;
         }
     }

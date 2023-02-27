@@ -48,24 +48,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Gardening\Gardening_Planter.cs" />
-    <Compile Include="Gardening\Gardening_Soil.cs" />
-    <Compile Include="Gardening\Gardening_SoilComp.cs" />
-    <Compile Include="Gardening\Gardening_SoilJob.cs" />
-    <Compile Include="Gardening\Gardening_SoilJobDriver.cs" />
-    <Compile Include="Gardening\Gardening_TrellisExtension.cs" />
-    <Compile Include="Gardening\Gardening_TrellisPlant.cs" />
-    <Compile Include="Gardening\Gardening_Trellis.cs" />
+    <Compile Include="Gardening\Designator\Gardening_DesignatorDefOf.cs" />
+    <Compile Include="Gardening\Designator\Gardening_DesignatorDef.cs" />
+    <Compile Include="Gardening\Designator\Gardening_Designator_Soil.cs" />
+    <Compile Include="Gardening\Soil\Job\Gardening_WorkGiver_Soil.cs" />
+    <Compile Include="Gardening\Planter\Gardening_Planter.cs" />
+    <Compile Include="Gardening\Soil\Gardening_Soil.cs" />
+    <Compile Include="Gardening\Planter\Gardening_Planter_SoilComp.cs" />
+    <Compile Include="Gardening\Soil\Job\Gardening_JobDriver_Soil.cs" />
+    <Compile Include="Gardening\Trellis\Gardening_TrellisExtension.cs" />
+    <Compile Include="Gardening\Trellis\Gardening_TrellisPlant.cs" />
+    <Compile Include="Gardening\Trellis\Gardening_Trellis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About\About.xml" />
     <Content Include="Defs\JobDefs\Gardening_SoilJob.xml" />
+    <Content Include="Defs\Misc\Designations\Gardening_DigSoil.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Grape.xml" />
     <Content Include="Defs\ThingDefs\Gardening_GreenBean.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Planter.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Soil.xml" />
-    <Content Include="Defs\ThinkDefs\Gardening_SoilJob.xml" />
+    <Content Include="Defs\WorkGiverDefs\Gardening_WorkGiver_Soil.xml" />
     <Content Include="Languages\English\Keyed\Gardening_Keys.xml" />
     <Content Include="Patches\Gardening_TrellisPlant.xml" />
     <Content Include="Defs\ThingDefs\Gardening_SuperRice.xml" />

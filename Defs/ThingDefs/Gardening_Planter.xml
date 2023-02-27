@@ -39,7 +39,7 @@
 		<tickerType>Rare</tickerType>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-			<li Class="Rimworld_Gardening.Gardening_SoilCompProperties">
+			<li Class="Rimworld_Gardening.Gardening_Planter_SoilCompProperties">
 				<mySoilFertility>0.5</mySoilFertility>
 			</li>
 		</comps>

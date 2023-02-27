@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<Rimworld_Gardening.Gardening_DesignatorDef>
+		<defName>Gardening_DigSoil</defName>
+		<texturePath>Designations/Plan</texturePath>
+		<targetType>Cell</targetType>
+	</Rimworld_Gardening.Gardening_DesignatorDef>
+</Defs>

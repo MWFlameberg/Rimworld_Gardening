@@ -2,7 +2,7 @@
 <Defs>
 	<JobDef>
 		<defName>Gardening_SoilJob</defName>
-		<driverClass>RimworldGardening.Gardening_SoilJobDriver</driverClass>
+		<driverClass>Rimworld_Gardening.Gardening_WorkGiver_Soil</driverClass>
 		<reportString>wow</reportString>
 		<casualInterruptible>false</casualInterruptible>
 		<suspendable>false</suspendable>
