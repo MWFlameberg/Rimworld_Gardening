@@ -2,15 +2,16 @@
 <Defs>
 	<WorkGiverDef>
 		<defName>Gardening_DigSoil</defName>
-		<label>dig up the soil</label>
-		<giverClass>Rimworld_Gardening.Gardening_WorkGiver_Soil</giverClass>
+		<label>dig</label>
+		<giverClass>Rimworld_Gardening.Gardening_WorkGiver_DigSoil</giverClass>
 		<workType>Mining</workType>
-		<priorityInType>75</priorityInType>
+		<priorityInType>100</priorityInType>
 		<verb>dig</verb>
-		<gerund>mining</gerund>
+		<gerund>dig</gerund>
+		<tagToGive>Fieldwork</tagToGive>
+		<scanCells>true</scanCells>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
-		<canBeDoneByMechs>false</canBeDoneByMechs>
 	</WorkGiverDef>
 </Defs>

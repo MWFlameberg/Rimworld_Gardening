@@ -48,23 +48,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Gardening\Designator\Gardening_DesignatorDefOf.cs" />
-    <Compile Include="Gardening\Designator\Gardening_DesignatorDef.cs" />
-    <Compile Include="Gardening\Designator\Gardening_Designator_Soil.cs" />
-    <Compile Include="Gardening\Soil\Job\Gardening_WorkGiver_Soil.cs" />
+    <Compile Include="Gardening\Designator\Gardening_Designator_DigSoil.cs" />
+    <Compile Include="Gardening\Soil\Job\Gardening_JobDriver_DigSoil.cs" />
+    <Compile Include="Gardening\Soil\Job\Gardening_WorkGiver_DigSoil.cs" />
     <Compile Include="Gardening\Planter\Gardening_Planter.cs" />
     <Compile Include="Gardening\Soil\Gardening_Soil.cs" />
     <Compile Include="Gardening\Planter\Gardening_Planter_SoilComp.cs" />
-    <Compile Include="Gardening\Soil\Job\Gardening_JobDriver_Soil.cs" />
-    <Compile Include="Gardening\Trellis\Gardening_TrellisExtension.cs" />
     <Compile Include="Gardening\Trellis\Gardening_TrellisPlant.cs" />
     <Compile Include="Gardening\Trellis\Gardening_Trellis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About\About.xml" />
-    <Content Include="Defs\JobDefs\Gardening_SoilJob.xml" />
-    <Content Include="Defs\Misc\Designations\Gardening_DigSoil.xml" />
+    <Content Include="Defs\Misc\Designations\Gardening_DesignationCatagories.xml" />
+    <Content Include="Defs\Misc\Designations\Gardening_DesignatorDef.xml" />
+    <Content Include="Defs\JobDefs\Gardening_DigSoil.xml" />
+    <Content Include="Defs\TerrainDefs\Gardening_DugSoil.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Grape.xml" />
     <Content Include="Defs\ThingDefs\Gardening_GreenBean.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Planter.xml" />

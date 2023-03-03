@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DesignationCategoryDef>
+		<defName>Gardening_Plants</defName>
+		<label>gardening</label>
+		<order>499</order>
+		<specialDesignatorClasses>
+			<li>Rimworld_Gardening.Gardening_Designator_DigSoil</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+</Defs>
