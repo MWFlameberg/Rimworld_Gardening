@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WorkGiverDef>
+		<defName>Gardening_FillSoil</defName>
+		<label>fill</label>
+		<giverClass>Rimworld_Gardening.Gardening_WorkGiver_FillSoil</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>100</priorityInType>
+		<verb>fill</verb>
+		<gerund>fill</gerund>
+		<tagToGive>Fieldwork</tagToGive>
+		<scanCells>true</scanCells>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+</Defs>

@@ -7,9 +7,14 @@ using Verse;
 namespace Rimworld_Gardening {
     public class Gardening_Planter : Building_PlantGrower {
         private ThingDef plantDefToGrow;
+        private Gardening_Comp_Soil soilComp;
         public override void PostMake() {
             base.PostMake();
-
+            soilComp = this.GetComp<Gardening_Comp_Soil>();
+        }
+        public override void ExposeData() {
+            base.ExposeData();
+            Scribe_Defs.Look(ref plantDefToGrow, "plantDefToGrow");
         }
         public override string GetInspectString() {
             StringBuilder stringBuilder = new StringBuilder();

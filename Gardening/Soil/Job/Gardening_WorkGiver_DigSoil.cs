@@ -36,5 +36,6 @@ namespace Rimworld_Gardening {
     [DefOf]
     public static class Gardening_JobDefOf {
         public static JobDef Gardening_DigSoil;
+        public static JobDef Gardening_FillSoil;
     }
 }

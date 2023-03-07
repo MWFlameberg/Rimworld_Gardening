@@ -48,18 +48,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gardening\Designator\Gardening_DesignatorDefOf.cs" />
+    <Compile Include="Gardening\Designator\Gardening_Designator_FillSoil.cs" />
     <Compile Include="Gardening\Designator\Gardening_Designator_DigSoil.cs" />
     <Compile Include="Gardening\Soil\Job\Gardening_JobDriver_DigSoil.cs" />
+    <Compile Include="Gardening\Soil\Job\Gardening_JobDriver_FillSoil.cs" />
     <Compile Include="Gardening\Soil\Job\Gardening_WorkGiver_DigSoil.cs" />
     <Compile Include="Gardening\Planter\Gardening_Planter.cs" />
     <Compile Include="Gardening\Soil\Gardening_Soil.cs" />
-    <Compile Include="Gardening\Planter\Gardening_Planter_SoilComp.cs" />
+    <Compile Include="Gardening\Planter\Gardening_Comp_Soil.cs" />
+    <Compile Include="Gardening\Soil\Job\Gardening_WorkGiver_FillSoil.cs" />
     <Compile Include="Gardening\Trellis\Gardening_TrellisPlant.cs" />
     <Compile Include="Gardening\Trellis\Gardening_Trellis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About\About.xml" />
+    <Content Include="Defs\JobDefs\Gardening_FillSoil.xml" />
     <Content Include="Defs\Misc\Designations\Gardening_DesignationCatagories.xml" />
     <Content Include="Defs\Misc\Designations\Gardening_DesignatorDef.xml" />
     <Content Include="Defs\JobDefs\Gardening_DigSoil.xml" />
@@ -68,7 +73,8 @@
     <Content Include="Defs\ThingDefs\Gardening_GreenBean.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Planter.xml" />
     <Content Include="Defs\ThingDefs\Gardening_Soil.xml" />
-    <Content Include="Defs\WorkGiverDefs\Gardening_WorkGiver_Soil.xml" />
+    <Content Include="Defs\WorkGiverDefs\Gardening_WorkGiver_FillSoil.xml" />
+    <Content Include="Defs\WorkGiverDefs\Gardening_WorkGiver_DigSoil.xml" />
     <Content Include="Languages\English\Keyed\Gardening_Keys.xml" />
     <Content Include="Patches\Gardening_TrellisPlant.xml" />
     <Content Include="Defs\ThingDefs\Gardening_SuperRice.xml" />

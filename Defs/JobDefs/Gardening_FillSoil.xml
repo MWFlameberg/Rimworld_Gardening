@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<JobDef>
-		<defName>Gardening_DigSoil</defName>
-		<driverClass>Rimworld_Gardening.Gardening_JobDriver_DigSoil</driverClass>
-		<reportString>digging soil</reportString>
+		<defName>Gardening_FillSoil</defName>
+		<driverClass>Rimworld_Gardening.Gardening_JobDriver_FillSoil</driverClass>
+		<reportString>filling soil</reportString>
 		<casualInterruptible>false</casualInterruptible>
 		<suspendable>false</suspendable>
 	</JobDef>

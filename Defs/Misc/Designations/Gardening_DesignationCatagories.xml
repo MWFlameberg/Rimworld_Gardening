@@ -6,6 +6,7 @@
 		<order>499</order>
 		<specialDesignatorClasses>
 			<li>Rimworld_Gardening.Gardening_Designator_DigSoil</li>
+			<li>Rimworld_Gardening.Gardening_Designator_FillSoil</li>
 		</specialDesignatorClasses>
 	</DesignationCategoryDef>
 </Defs>

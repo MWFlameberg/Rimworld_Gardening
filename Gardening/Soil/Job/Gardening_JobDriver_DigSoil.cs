@@ -6,17 +6,19 @@ using Verse.AI;
 
 namespace Rimworld_Gardening {
     internal class Gardening_JobDriver_DigSoil : JobDriver {
-        private float WorkDone;
-        private const float WorkNeeded = 20000f;
+        private int WorkDone;
+        private int WorkSpeed;
+        private const int BaseWorkSpeed = 50;
+        private const int WorkNeeded = 20000;
         public override bool TryMakePreToilReservations(bool errorOnFailed) {
-            pawn.Map.pawnDestinationReservationManager.Reserve(pawn, job, job.targetA.Cell);
-            return true;
+            return pawn.Reserve(job.targetA, job, 1, -1, null, errorOnFailed);
         }
         protected override IEnumerable<Toil> MakeNewToils() {
             yield return Toils_Goto.GotoCell(TargetIndex.A, PathEndMode.Touch);
+            WorkSpeed = (int)(BaseWorkSpeed * pawn.GetStatValue(StatDefOf.MiningSpeed));
             Toil dig = ToilMaker.MakeToil("MakeNewToils");
             dig.tickAction = delegate {
-                WorkDone += 10;
+                WorkDone += WorkSpeed;
                 if (WorkDone >= WorkNeeded) {
                     Thing thing = ThingMaker.MakeThing(ThingDef.Named("Gardening_Soil"));
                     thing.stackCount = 50;
@@ -27,7 +29,7 @@ namespace Rimworld_Gardening {
                 }
             };
             dig.defaultCompleteMode = ToilCompleteMode.Never;
-            dig.WithEffect(EffecterDefOf.Mine, TargetIndex.A);
+            dig.WithEffect(EffecterDefOf.Clean, TargetIndex.A);
             dig.PlaySustainerOrSound(() => SoundDefOf.Interact_CleanFilth);
             dig.WithProgressBar(TargetIndex.A, () => WorkDone / WorkNeeded, interpolateBetweenActorAndTarget: true);
             dig.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
