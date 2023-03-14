@@ -35,6 +35,7 @@ namespace Rimworld_Gardening {
             List<Thing> soil = FindAllSoil(pawn, cell);
             Job job = JobMaker.MakeJob(Gardening_JobDefOf.Gardening_FillSoil, cell);
             job.targetQueueB = soil.Select((Thing f) => new LocalTargetInfo(f)).ToList();
+            job.count = 25;
             return job;
         }
         public List<Thing> FindAllSoil(Pawn pawn, IntVec3 cell) {

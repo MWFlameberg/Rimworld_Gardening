@@ -21,7 +21,7 @@ namespace Rimworld_Gardening {
                 WorkDone += WorkSpeed;
                 if (WorkDone >= WorkNeeded) {
                     Thing thing = ThingMaker.MakeThing(ThingDef.Named("Gardening_Soil"));
-                    thing.stackCount = 50;
+                    thing.stackCount = 25;
                     GenPlace.TryPlaceThing(thing, pawn.Position, base.Map, ThingPlaceMode.Near);
                     base.Map.terrainGrid.SetTerrain(job.targetA.Cell, TerrainDef.Named("Gardening_DugSoil"));
                     base.Map.designationManager.DesignationAt(job.targetA.Cell, Gardening_DesignatorDefOf.Gardening_DigSoil).Delete();
